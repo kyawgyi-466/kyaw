@@ -19,7 +19,7 @@ B="\e[1;34m"; G="\e[1;32m"; Y="\e[1;33m"; R="\e[1;31m"; C="\e[1;36m"; Z="\e[0m"
 LINE="${B}────────────────────────────────────────────────────────${Z}"
 say(){ echo -e "$1"; }
 
-echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို KyawGyi မှ ပြန်တည်းဖြတ်ပြီးသွင်းနေပါတယ်${Z}\n$LINE"
+echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို KYAWZEYU မှ ပြန်တည်းဖြတ်ပြီးသွင်းနေပါတယ်${Z}\n$LINE"
 
 # ===== Root check =====
 if [ "$(id -u)" -ne 0 ]; then echo -e "${R}❌ root လိုပါသည် (sudo -i)${Z}"; exit 1; fi
@@ -385,8 +385,8 @@ HTML = """<!doctype html>
   <form method="post" action="/add" class="form-inline">
     <div><label>👤 User</label><input name="user" required></div>
     <div><label>🔑 Password</label><input name="password" required></div>
-    <div><label>⏰ Expires</label><input name="expires" placeholder="2025-12-31 or 30"></div>
-    <div><label>🔌 UDP Port</label><input name="port" placeholder="auto"></div>
+    <div><label>📝 Expires</label><input name="expires" placeholder="2025-12-31 or 30"></div>
+    <div><label>🚀 UDP Port</label><input name="port" placeholder="auto"></div>
     <div><label>📱 Bind IP (1 device)</label><input name="bind_ip" placeholder="auto when online…"></div>
     <div style="align-self:end"><button class="btn" type="submit">Save + Sync</button></div>
   </form>
@@ -394,7 +394,7 @@ HTML = """<!doctype html>
 
 <table>
   <tr>
-    <th>👤 User</th><th>🔑 Password</th><th>⏰ Expires</th>
+    <th>👤 User</th><th>🔑 Password</th><th>📝 Expires</th>
     <th>🔌 Port</th><th>📱 Bind IP</th><th>🔎 Status</th><th>✏️ Edit</th><th>🗑️ Delete</th>
   </tr>
   {% for u in users %}
@@ -532,8 +532,8 @@ def edit_user():
       <input type='hidden' name='orig' value='{u.get('user')}'>
       <div><label>👤 User</label><input name='user' value='{u.get('user')}' required></div>
       <div><label>🔑 Password</label><input name='password' value='{u.get('password')}' required></div>
-      <div><label>⏰ Expires</label><input name='expires' value='{u.get('expires','')}' placeholder='2025-12-31 or 30'></div>
-      <div><label>🔌 UDP Port</label><input name='port' value='{u.get('port','')}'></div>
+      <div><label>📝 Expires</label><input name='expires' value='{u.get('expires','')}' placeholder='2025-12-31 or 30'></div>
+      <div><label>🚀 UDP Port</label><input name='port' value='{u.get('port','')}'></div>
       <div><label>📱 Bind IP</label><input name='bind_ip' value='{u.get('bind_ip','')}' placeholder='blank = no lock'></div>
       <div style='align-self:end'><button class='btn' type='submit'>Save</button>
       <a class='btn' href='/' style='margin-left:6px'>Cancel</a></div>
