@@ -187,7 +187,7 @@ CONFIG_FILE = "/etc/zivpn/config.json"
 LISTEN_FALLBACK = "5667"
 RECENT_SECONDS = 120
 
-LOGO_URL = "https://raw.githubusercontent.com/Upk123/upkvip-ziscript/refs/heads/main/20251018_231111.png"
+LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/lesson-234/refs/heads/main/logo.png"
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("WEB_SECRET","dev-secret-change-me")
