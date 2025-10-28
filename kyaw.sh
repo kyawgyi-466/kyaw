@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar, One-Device Lock + Edit UI)
-# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + DEV-U PHOE KAUNT UI polish (+ device lock by bind_ip)
+# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + ZIVPN USER PANEL UI polish (+ device lock by bind_ip)
 # Features:
 #  - One-time key gate (POST /api/consume on KEY_API_URL)
 #  - apt-guard, packages
@@ -395,7 +395,7 @@ HTML = """<!doctype html>
 <table>
   <tr>
     <th>👤 User</th><th>🔑 Password</th><th>📝 Expires</th>
-    <th>🔌 Port</th><th>📱 Bind IP</th><th>🔎 Status</th><th>✏️ Edit</th><th>🗑️ Delete</th>
+    <th>🚀 Port</th><th>📱 Bind IP</th><th>🔎 Status</th><th>✏️ Edit</th><th>🗑️ Delete</th>
   </tr>
   {% for u in users %}
   <tr class="{% if u.expires and u.expires < today %}edit-row{% endif %}">
