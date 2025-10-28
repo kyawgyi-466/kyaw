@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar, One-Device Lock + Edit UI)
-# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + Dev-ZIVPN USER PANEL UI polish (+ device lock by bind_ip)
+# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + dev-ZIVPN USER PANEL UI polish (+ device lock by bind_ip)
 # Features:
 #  - One-time key gate (POST /api/consume on KEY_API_URL)
 #  - apt-guard, packages
