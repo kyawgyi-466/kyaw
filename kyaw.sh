@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar, One-Device Lock + Edit UI)
-# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + dev-ZIVPN USER PANEL UI polish (+ device lock by bind_ip)
+# Authors: Zahid Islam (udp-zivpn) + UPK tweaks + DEV-KYAWZEYU234 UI polish (+ device lock by bind_ip)
 # Features:
 #  - One-time key gate (POST /api/consume on KEY_API_URL)
 #  - apt-guard, packages
@@ -354,9 +354,9 @@ HTML = """<!doctype html>
 </style></head><body>
 <header>
  <div class="wrap row">
-   <img src="{{ logo }}" alt="DEV-U PHOE KAUNT" style="height:40px;width:auto;border-radius:10px">
+   <img src="{{ logo }}" alt="DEV-KYAWZEYU234" style="height:40px;width:auto;border-radius:10px">
    <div style="flex:1">
-     <h1>DEV-U PHOE KAUNT</h1>
+     <h1>DEV-KYAWZEYU234</h1>
      <div class="sub">ZIVPN User Panel • Total: <span class="count">{{ total }}</span></div>
    </div>
    <div class="row">
