@@ -14,7 +14,7 @@ BIND="0.0.0.0"                          # Bind address
 APPDIR="/opt/zi-keyapi"                 # App dir
 ENVF="/etc/default/zi-keyapi"           # Environment file used by systemd
 UNIT="/etc/systemd/system/zi-keyapi.service"
-LOGO_URL="https://raw.githubusercontent.com/kyawgyi-466/lesson-234/refs/heads/main/logo.png"
+LOGO_URL="https://raw.githubusercontent.com/Upk123/upkvip-ziscript/refs/heads/main/20251018_231111.png"
 
 # ===== Parse args =====
 ACTION=""
