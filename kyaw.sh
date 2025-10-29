@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar)
-# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + DEV-ZIVPN USER PANEL UI polish
+# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + ℤ𝕀𝕍ℙℕ 𝕌𝕊𝔼ℝ ℙ𝔸ℕ𝔼𝕃 UI polish
 # Features: apt-guard, binary fetch fallback, UFW rules, DNAT+MASQ, sysctl forward,
 #           Flask 1.x-compatible Web UI (auto-refresh 120s), users.json <-> config.json mirror sync,
 #           per-user Online/Offline via conntrack, expires accepts "YYYY-MM-DD" OR days "30",
@@ -15,7 +15,7 @@ B="\e[1;34m"; G="\e[1;32m"; Y="\e[1;33m"; R="\e[1;31m"; C="\e[1;36m"; M="\e[1;35
 LINE="${B}────────────────────────────────────────────────────────${Z}"
 say(){ echo -e "$1"; }
 
-echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို KYAWZEYU 234 မှ ရေးသားထားသည်${Z}\n$LINE"
+echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို 🅚🅨🅐🅦🅩🅔🅨🅤 ❷❸❹ မှ ရေးသားထားသည်${Z}\n$LINE"
 
 # ===== Root check =====
 if [ "$(id -u)" -ne 0 ]; then
@@ -273,8 +273,8 @@ HTML = """<!doctype html>
 
 {% if not authed %}
   <div class="login-card">
-    <div class="center"><img class="logo" src="{{ logo }}" alt="DEV-ZIVPN UAER PANEL"></div>
-    <h3 class="center">DEV-ZIVPN USER PANEL</h3>
+    <div class="center"><img class="logo" src="{{ logo }}" alt="ℤ𝕀𝕍ℙℕ 𝕌𝕊𝔼ℝ ℙ𝔸ℕ𝔼𝕃"></div>
+    <h3 class="center">ℤ𝕀𝕍ℙℕ 𝕌𝕊𝔼ℝ ℙ𝔸ℕ𝔼𝕃</h3>
     <p class="center muted" style="margin-top:0">ZIVPN User Panel — Login</p>
     {% if err %}<div class="err">{{err}}</div>{% endif %}
     <form method="post" action="/login">
@@ -288,10 +288,10 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="DEV-ZIVPN USER PANEL"
+  <img src="{{ logo }}" alt="ℤ𝕀𝕍ℙℕ 𝕌𝕊𝔼ℝ ℙ𝔸ℕ𝔼𝕃"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
-    <h1>DEV-ZIVPN USER PANEL</h1>
+    <h1>ℤ𝕀𝕍ℙℕ 𝕌𝕊𝔼ℝ ℙ𝔸ℕ𝔼𝕃</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
