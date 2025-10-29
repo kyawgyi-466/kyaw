@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar)
-# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + DEV-U PHOE KAUNT UI polish
+# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + DEV-KYAWZEYU 234 UI polish
 # Features: apt-guard, binary fetch fallback, UFW rules, DNAT+MASQ, sysctl forward,
 #           Flask 1.x-compatible Web UI (auto-refresh 120s), users.json <-> config.json mirror sync,
 #           per-user Online/Offline via conntrack, expires accepts "YYYY-MM-DD" OR days "30",
@@ -15,7 +15,7 @@ B="\e[1;34m"; G="\e[1;32m"; Y="\e[1;33m"; R="\e[1;31m"; C="\e[1;36m"; M="\e[1;35
 LINE="${B}────────────────────────────────────────────────────────${Z}"
 say(){ echo -e "$1"; }
 
-echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို U PHOE KAUNT မှ ရေးသားထားသည်${Z}\n$LINE"
+echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI ကို KYAWZEYU 234 မှ ရေးသားထားသည်${Z}\n$LINE"
 
 # ===== Root check =====
 if [ "$(id -u)" -ne 0 ]; then
@@ -226,7 +226,7 @@ CONFIG_FILE = "/etc/zivpn/config.json"
 LISTEN_FALLBACK = "5667"
 RECENT_SECONDS = 120
 
-LOGO_URL = "https://raw.githubusercontent.com/Upk123/upkvip-ziscript/refs/heads/main/20251018_231111.png"
+LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/lesson-234/refs/heads/main/logo.png"
 
 HTML = """<!doctype html>
 <html lang="my"><head><meta charset="utf-8">
@@ -273,8 +273,8 @@ HTML = """<!doctype html>
 
 {% if not authed %}
   <div class="login-card">
-    <div class="center"><img class="logo" src="{{ logo }}" alt="DEV-U PHOE KAUNT"></div>
-    <h3 class="center">DEV-U PHOE KAUNT</h3>
+    <div class="center"><img class="logo" src="{{ logo }}" alt="DEV-KYAWZEYU 234"></div>
+    <h3 class="center">DEV-KYAWZEYU 234</h3>
     <p class="center muted" style="margin-top:0">ZIVPN User Panel — Login</p>
     {% if err %}<div class="err">{{err}}</div>{% endif %}
     <form method="post" action="/login">
@@ -288,10 +288,10 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="DEV-U PHOE KAUNT"
+  <img src="{{ logo }}" alt="DEV-KYAWZEYU 234"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
-    <h1>DEV-U PHOE KAUNT</h1>
+    <h1>DEV-KYAWZEYU 234</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
@@ -309,16 +309,16 @@ HTML = """<!doctype html>
     <div><label>🔑 Password</label><input name="password" required></div>
   </div>
   <div class="row">
-    <div><label>⏰ Expires (ထည့်သွင်းလိုသည့်ရက်)</label><input name="expires" placeholder="2025-12-31 or 30"></div>
-    <div><label>🔌 UDP Port (6000–19999)</label><input name="port" placeholder="auto"></div>
+    <div><label>📝 Expires (ထည့်သွင်းလိုသည့်ရက်)</label><input name="expires" placeholder="2025-12-31 or 30"></div>
+    <div><label>🚀 UDP Port (6000–19999)</label><input name="port" placeholder="auto"></div>
   </div>
   <button class="btn" type="submit">Save + Sync</button>
 </form>
 
 <table>
   <tr>
-    <th>👤 User</th><th>🔑 Password</th><th>⏰ Expires</th>
-    <th>🔌 Port</th><th>🔎 Status</th><th>🗑️ Delete</th>
+    <th>👤 User</th><th>🔑 Password</th><th>📝 Expires</th>
+    <th>🚀 Port</th><th>🔎 Status</th><th>🗑️ Delete</th>
   </tr>
   {% for u in users %}
   <tr class="{% if u.expires and u.expires < today %}expired{% endif %}">
@@ -727,7 +727,7 @@ CONFIG_FILE = "/etc/zivpn/config.json"
 LISTEN_FALLBACK = "5667"
 RECENT_SECONDS = 120
 
-LOGO_URL = "https://raw.githubusercontent.com/Upk123/upkvip-ziscript/refs/heads/main/20251018_231111.png"
+LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/lesson-234/refs/heads/main/logo.png"
 
 HTML = """<!doctype html>
 <html lang="my"><head><meta charset="utf-8">
@@ -810,16 +810,16 @@ HTML = """<!doctype html>
     <div><label>🔑 Password</label><input name="password" required></div>
   </div>
   <div class="row">
-    <div><label>⏰ Expires (ထည့်သွင်းလိုသည့်ရက်)</label><input name="expires" placeholder="2025-12-31 or 30"></div>
-    <div><label>🔌 UDP Port (6000–19999)</label><input name="port" placeholder="auto"></div>
+    <div><label>📝 Expires (ထည့်သွင်းလိုသည့်ရက်)</label><input name="expires" placeholder="2025-12-31 or 30"></div>
+    <div><label>🚀 UDP Port (6000–19999)</label><input name="port" placeholder="auto"></div>
   </div>
   <button class="btn" type="submit">Save + Sync</button>
 </form>
 
 <table>
   <tr>
-    <th>👤 User</th><th>🔑 Password</th><th>⏰ Expires</th>
-    <th>🔌 Port</th><th>🔎 Status</th><th>🗑️ Delete</th>
+    <th>👤 User</th><th>🔑 Password</th><th>📝 Expires</th>
+    <th>🚀 Port</th><th>🔎 Status</th><th>🗑️ Delete</th>
   </tr>
   {% for u in users %}
   <tr class="{% if u.expires and u.expires < today %}expired{% endif %}">
