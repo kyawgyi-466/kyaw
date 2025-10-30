@@ -226,7 +226,7 @@ CONFIG_FILE = "/etc/zivpn/config.json"
 LISTEN_FALLBACK = "5667"
 RECENT_SECONDS = 120
 
-LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/kyaw/refs/heads/main/kzy234.jpeg"
+LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/kyaw/refs/heads/main/zivpn.jpg"
 
 HTML = """<!doctype html>
 <html lang="my"><head><meta charset="utf-8">
