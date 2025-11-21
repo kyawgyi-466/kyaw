@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar)
-# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + 𝐊𝐘𝐀𝐖 𝐀𝐔𝐍𝐆 𝐏𝐀𝐍𝐄𝐋 UI polish
+# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + 𝐊𝐘𝐀𝐖𝐙𝐄𝐘𝐔 𝟐𝟑𝟒 UI polish
 # Features: apt-guard, binary fetch fallback, UFW rules, DNAT+MASQ, sysctl forward,
 #           Flask 1.x-compatible Web UI (auto-refresh 120s), users.json <-> config.json mirror sync,
 #           per-user Online/Offline via conntrack, expires accepts "YYYY-MM-DD" OR days "30",
@@ -226,7 +226,7 @@ CONFIG_FILE = "/etc/zivpn/config.json"
 LISTEN_FALLBACK = "5667"
 RECENT_SECONDS = 120
 
-LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/kyaw/refs/heads/main/zivpn.jpg"
+LOGO_URL = "https://raw.githubusercontent.com/kyawgyi-466/lesson-234/refs/heads/main/logo.png"
 
 HTML = """<!doctype html>
 <html lang="my"><head><meta charset="utf-8">
@@ -273,8 +273,8 @@ HTML = """<!doctype html>
 
 {% if not authed %}
   <div class="login-card">
-    <div class="center"><img class="logo" src="{{ logo }}" alt="𝐊𝐘𝐀𝐖 𝐀𝐔𝐍𝐆 𝐏𝐀𝐍𝐄𝐋"></div>
-    <h3 class="center">𝐊𝐘𝐀𝐖 𝐀𝐔𝐍𝐆 𝐏𝐀𝐍𝐄𝐋</h3>
+    <div class="center"><img class="logo" src="{{ logo }}" alt="𝐊𝐘𝐀𝐖𝐙𝐄𝐘𝐔 𝟐𝟑𝟒"></div>
+    <h3 class="center">𝐊𝐘𝐀𝐖𝐙𝐄𝐘𝐔 𝟐𝟑𝟒</h3>
     <p class="center muted" style="margin-top:0">ZIVPN User Panel — Login</p>
     {% if err %}<div class="err">{{err}}</div>{% endif %}
     <form method="post" action="/login">
@@ -288,10 +288,10 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="𝐊𝐘𝐀𝐖 𝐀𝐔𝐍𝐆 𝐏𝐀𝐍𝐄𝐋"
+  <img src="{{ logo }}" alt="𝐊𝐘𝐀𝐖𝐙𝐄𝐘𝐔 𝟐𝟑𝟒"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
-    <h1>𝐊𝐘𝐀𝐖 𝐀𝐔𝐍𝐆 𝐏𝐀𝐍𝐄𝐋</h1>
+    <h1>𝐊𝐘𝐀𝐖𝐙𝐄𝐘𝐔 𝟐𝟑𝟒</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
