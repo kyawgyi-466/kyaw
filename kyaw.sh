@@ -1,6 +1,6 @@
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar)
-# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + 𝐓𝐇𝐀𝐑 𝐓𝐇𝐀𝐑 𝐏𝐀𝐍𝐄𝐋 UI polish
+# Author mix: Zahid Islam (udp-zivpn) + UPK tweaks + 𝐏𝐄𝐑𝐅𝐄𝐂𝐓 𝐏𝐀𝐍𝐄𝐋 UI polish
 # Features: apt-guard, binary fetch fallback, UFW rules, DNAT+MASQ, sysctl forward,
 #           Flask 1.x-compatible Web UI (auto-refresh 120s), users.json <-> config.json mirror sync,
 #           per-user Online/Offline via conntrack, expires accepts "YYYY-MM-DD" OR days "30",
@@ -273,8 +273,8 @@ HTML = """<!doctype html>
 
 {% if not authed %}
   <div class="login-card">
-    <div class="center"><img class="logo" src="{{ logo }}" alt="𝐓𝐇𝐀𝐑 𝐓𝐇𝐀𝐑 𝐏𝐀𝐍𝐄𝐋"></div>
-    <h3 class="center">𝐓𝐇𝐀𝐑 𝐓𝐇𝐀𝐑 𝐏𝐀𝐍𝐄𝐋</h3>
+    <div class="center"><img class="logo" src="{{ logo }}" alt="𝐏𝐄𝐑𝐅𝐄𝐂𝐓 𝐏𝐀𝐍𝐄𝐋"></div>
+    <h3 class="center">𝐏𝐄𝐑𝐅𝐄𝐂𝐓 𝐏𝐀𝐍𝐄𝐋</h3>
     <p class="center muted" style="margin-top:0">ZIVPN User Panel — Login</p>
     {% if err %}<div class="err">{{err}}</div>{% endif %}
     <form method="post" action="/login">
@@ -288,10 +288,10 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="𝐓𝐇𝐀𝐑 𝐓𝐇𝐀𝐑 𝐏𝐀𝐍𝐄𝐋"
+  <img src="{{ logo }}" alt="𝐏𝐄𝐑𝐅𝐄𝐂𝐓 𝐏𝐀𝐍𝐄𝐋"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
-    <h1>𝐓𝐇𝐀𝐑 𝐓𝐇𝐀𝐑 𝐏𝐀𝐍𝐄𝐋</h1>
+    <h1>𝐏𝐄𝐑𝐅𝐄𝐂𝐓 𝐏𝐀𝐍𝐄𝐋</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
